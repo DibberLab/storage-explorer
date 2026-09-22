@@ -1,0 +1,14 @@
+services:
+  storage-explorer:
+    build: .
+    container_name: storage-explorer
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8420:8420"
+    environment:
+      - PORT=8420
+      - HOST_ROOT=/hostfs
+      - AUTH_USER=admin
+      - AUTH_PASS=dibberlab
+    volumes:
+      - /:/hostfs:rw

@@ -1,0 +1,15 @@
+{
+  "name": "storage-explorer",
+  "version": "1.0.0",
+  "description": "WinDirStat-style disk space explorer and volume manager for DibberLab",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "express": "^4.21.2"
+  }
+}
